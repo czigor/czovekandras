@@ -1,0 +1,14 @@
+uuid: f95cea1b-83a6-4bd8-b031-49e2ffa06867
+langcode: hu
+status: true
+dependencies:
+  config:
+    - user.role.szerkeszto
+  module:
+    - user
+id: user_add_role_action.szerkeszto
+label: 'szerkesztő szerepkör hozzárendelése a kijelölt felhasználókhoz'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: szerkeszto

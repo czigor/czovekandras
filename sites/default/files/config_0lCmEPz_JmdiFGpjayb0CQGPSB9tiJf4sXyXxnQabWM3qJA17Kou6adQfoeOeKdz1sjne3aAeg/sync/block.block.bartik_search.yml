@@ -1,0 +1,22 @@
+uuid: 1bb31e41-39d2-4c6f-8500-ba43bd8834e3
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - bartik
+_core:
+  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
+id: bartik_search
+theme: bartik
+region: '-1'
+weight: -4
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Keresés
+  provider: search
+  label_display: visible
+visibility: {  }

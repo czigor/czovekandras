@@ -1,0 +1,39 @@
+uuid: 1fd79772-d6c2-45a4-9b64-779d68462cf8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.image.field_image
+    - field.field.media.image.field_media_in_library
+    - image.style.exif
+    - image.style.media_crop
+    - media_entity.bundle.image
+  module:
+    - colorbox
+_core:
+  default_config_hash: G4jxXZyePj8vEVEQ4r5lQBZWZ14IcwtXqZv0fOk_2bk
+id: media.image.default
+targetEntityType: media
+bundle: image
+mode: default
+content:
+  field_image:
+    weight: 3
+    label: hidden
+    settings:
+      colorbox_node_style: media_crop
+      colorbox_node_style_first: ''
+      colorbox_image_style: exif
+      colorbox_gallery: page
+      colorbox_gallery_custom: ''
+      colorbox_caption: auto
+      colorbox_caption_custom: ''
+    third_party_settings: {  }
+    type: colorbox
+hidden:
+  created: true
+  field_media_in_library: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

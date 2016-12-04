@@ -1,0 +1,101 @@
+uuid: a00f9640-fae3-424b-9352-82b5f2cf18e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.article.comment
+    - field.field.node.article.field_parag
+    - field.field.node.article.field_tags
+    - node.type.article
+  module:
+    - comment
+    - ds
+    - entity_reference_revisions
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      path: modules/contrib/ds
+      library: ''
+      disable_css: false
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+      entity_classes: old_view_mode
+    regions:
+      ds_content:
+        - node_title
+        - node_author
+        - node_post_date
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h2
+          class: ''
+      node_author:
+        plugin_id: node_author
+        weight: 1
+        label: hidden
+        formatter: author
+      node_post_date:
+        plugin_id: node_post_date
+        weight: 2
+        label: hidden
+        formatter: ds_post_date_medium
+_core:
+  default_config_hash: U8ghxJXn8JE2p6Q2wLpPWAxpz4r_8crL1LxtapSrHAE
+id: node.article.teaser
+targetEntityType: node
+bundle: article
+mode: teaser
+content:
+  comment:
+    type: comment_default
+    weight: 10
+    label: above
+    settings:
+      pager_id: 0
+    third_party_settings: {  }
+  field_parag:
+    type: entity_reference_revisions_entity_view
+    weight: 8
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings:
+      ds:
+        ds_limit: '1'
+  field_tags:
+    type: entity_reference_label
+    weight: 11
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  langcode:
+    type: language
+    weight: 12
+    label: above
+    settings:
+      link_to_entity: false
+      native_language: false
+    third_party_settings: {  }
+  links:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

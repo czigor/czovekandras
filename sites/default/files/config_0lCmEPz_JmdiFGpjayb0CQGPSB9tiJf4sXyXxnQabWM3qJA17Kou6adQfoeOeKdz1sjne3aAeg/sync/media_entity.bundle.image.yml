@@ -1,0 +1,23 @@
+uuid: 93bbbf15-a656-4b56-9c3b-b81a45ddc3d7
+langcode: en
+status: true
+dependencies:
+  module:
+    - crop
+    - media_entity_image
+third_party_settings:
+  crop:
+    image_field: field_image
+_core:
+  default_config_hash: O3XLtjrwdpZKx86Pjukq2yeG3yQLmNSM-aqhzP10wEA
+id: image
+label: Image
+description: 'Use Image for uploading locally hosted images.'
+type: image
+queue_thumbnail_downloads: false
+new_revision: true
+type_configuration:
+  source_field: field_image
+  gather_exif: true
+field_map:
+  mime: field_image

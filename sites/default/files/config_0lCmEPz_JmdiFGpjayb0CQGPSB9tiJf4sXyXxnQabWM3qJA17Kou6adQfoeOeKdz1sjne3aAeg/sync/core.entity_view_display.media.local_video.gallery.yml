@@ -1,0 +1,31 @@
+uuid: e31fbb56-81cd-4ae0-89c4-ee01a638b988
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.gallery
+    - field.field.media.local_video.field_image
+    - field.field.media.local_video.field_local_video
+    - media_entity.bundle.local_video
+  module:
+    - media_entity_video
+id: media.local_video.gallery
+targetEntityType: media
+bundle: local_video
+mode: gallery
+content:
+  field_local_video:
+    weight: 2
+    label: hidden
+    settings:
+      video_attributes: controls
+      provide_download_link: 0
+    third_party_settings: {  }
+    type: video_player_html5
+hidden:
+  created: true
+  field_image: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

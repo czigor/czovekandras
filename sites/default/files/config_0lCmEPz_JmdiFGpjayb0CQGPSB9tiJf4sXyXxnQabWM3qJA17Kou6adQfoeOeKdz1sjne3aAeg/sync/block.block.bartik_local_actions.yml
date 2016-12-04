@@ -1,0 +1,20 @@
+uuid: d4b01bd8-5b20-41d6-8b07-0783fa97222b
+langcode: en
+status: false
+dependencies:
+  theme:
+    - bartik
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: bartik_local_actions
+theme: bartik
+region: '-1'
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Elsődleges adminisztrátori műveletek'
+  provider: core
+  label_display: '0'
+visibility: {  }

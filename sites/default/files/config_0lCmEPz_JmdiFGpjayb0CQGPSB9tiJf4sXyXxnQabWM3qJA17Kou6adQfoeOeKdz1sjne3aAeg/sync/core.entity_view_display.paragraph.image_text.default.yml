@@ -1,0 +1,78 @@
+uuid: 6d7200dc-5045-458a-8c00-cce530ce4f94
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_text.field_image
+    - field.field.paragraph.image_text.field_text
+    - image.style.large
+    - image.style.max_1300x1300
+    - paragraphs.paragraphs_type.image_text
+  module:
+    - colorbox
+    - ds
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col
+      path: modules/ds
+      library: layout_plugin/ds_2col
+      disable_css: false
+      settings:
+        wrappers:
+          left: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+      entity_classes: old_view_mode
+    regions:
+      left:
+        - field_image
+      right:
+        - field_text
+id: paragraph.image_text.default
+targetEntityType: paragraph
+bundle: image_text
+mode: default
+content:
+  created:
+    type: timestamp
+    weight: 2
+    label: above
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      colorbox_node_style: large
+      colorbox_node_style_first: large
+      colorbox_image_style: max_1300x1300
+      colorbox_gallery: post
+      colorbox_gallery_custom: ''
+      colorbox_caption: auto
+      colorbox_caption_custom: ''
+    third_party_settings: {  }
+    type: colorbox
+  field_text:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  uid:
+    type: entity_reference_label
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+hidden: {  }

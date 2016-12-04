@@ -1,0 +1,27 @@
+cancel_confirm:
+  body: "Kedves [user:display-name]!\r\n\r\n[site:name] webhelyen kezdeményezték a felhasználó törlését.\r\n\r\nA [site:url-brief] webhely felhasználója törölhető erre a hivatkozásra kattintva, vagy a böngésző címsorába másolva:\r\n\r\n[user:cancel-url]\r\n\r\nFIGYELMEZTETÉS: A felhasználó törlése nem visszavonható.\r\n\r\nA fenti hivatkozás egy napig érvényes, és ha nem lesz felhasználva, semmi nem történik.\r\n\r\n--  [site:name] csapata"
+  subject: '[user:display-name] felhasználó fióktörlési kérelme [site:name] webhelyen'
+password_reset:
+  body: "Kedves [user:display-name]!\r\n\r\n[site:name] webhelyen ennek a felhasználónak a nevében új jelszó iránti igény lett benyújtva.\r\n\r\nAz alábbi linkre kattintva, vagy azt a böngésző címsorába másolva lehet belépni:\r\n\r\n[user:one-time-login-url]\r\n\r\nEz egy egyszer használható belépési mód. Egy nap után az érvényessége lejár, de semmilyen következménye nem lesz, ha nem használják fel.\r\n\r\n-- [site:name] csapata"
+  subject: '[user:display-name] felhasználó bejelentkezési adatai [site:name] webhelyen'
+register_admin_created:
+  body: "Kedves [user:display-name]! \n\n[user:name] felhasználót létrehozta a webhely adminisztrátora. A belépéshez az alábbi hivatkozásra kell kattintani, vagy be kell másolni a böngésző címsorába: \n\r\n[user:one-time-login-url] \n\nEz hivatkozás csak egyszer használható belépésre, a betöltött oldalon meg kell adni a jelszót. A későbbiekben a [site:login-url] címen történő bejelentkezéshez az ott megadott jelszót kell használni:\n\nFelhasználónév: [user:name] \nJelszó: a megadott jelszó\n\n -- [site:name] csapata"
+  subject: '[site:name] adminisztrátora által létrehozott új felhasználói fiók elkészült'
+register_no_approval_required:
+  body: "Kedves [user:display-name]!\n\nKöszönjük a csatlakozási szándékot [site:name] webhelyhez. Az alábbi hivatkozásra kattintva vagy a böngésző címsorába illesztve lehet belépni:\n\n[user:one-time-login-url] \n\nA hivatkozás csak egyszer használható belépésre. Ezt követően a böngésző át lesz irányítva arra az oldalra, ahol többek közt a jelszó is megadható.\n\nA [site:login-url] oldalon a bejelentkezéshez az ott megadott a jelszót kell használni.\n\nfelhasználó név: [user:name] \njelszó: a megadott jelszó  \n\n-- [site:name] csapata"
+  subject: '[user:display-name] fiókadatai [site:name] webhelyen'
+register_pending_approval:
+  body: "[user:display-name],\r\n\r\nKöszönjük a csatlakozási szándékot [site:name] webhelyhez, a kérelem még elfogadásra vár. Jóváhagyás után küldünk egy emailt a bejelentkezési információkkal és jelszóállítási lehetőségekkel.\r\n\r\n\r\n--  [site:name] csapata"
+  subject: '[user:display-name] fiókadatai [site:name] webhelyen (jóváhagyásra várva)'
+register_pending_approval_admin:
+  body: "[user:display-name] felhasználói azonosítót igényelt.\r\n\r\n[user:edit-url]"
+  subject: '[user:display-name] fiókadatai [site:name] webhelyen (jóváhagyásra várva)'
+status_activated:
+  body: "[user:display-name],\r\n\r\nMegtörtént a fiók aktiválása [site:name] webhelyen.\r\n\r\nMost már be lehet jelentkezni a hivatkozásra kattintva vagy azt másolva és beillesztve a böngészőbe:\r\n\r\n[user:one-time-login-url]\r\n\r\nEz a hivatkozás csak egyszer használható bejelentkezésre, és egy olyan oldalra vezet, ahol beállítható a jelszó.\r\n\r\nA jelszó beállítása után a jövőben [site:login-url] címen lehet bejelentkezni a következőkkel:\r\n\r\nfelhasználónév: [user:account-name]\r\njelszó: A jelszava\r\n\r\n--  [site:name] csapata"
+  subject: '[user:display-name] fiókadatai [site:name] webhelyen (jóváhagyva)'
+status_blocked:
+  body: "[user:display-name],\r\n\r\n[site:account-name] webhelyen a hozzáférés blokkolva lett.\r\n\r\n--  [site:name] team"
+  subject: '[user:display-name] fiókadatai [site:name] webhelyen (zárolva)'
+status_canceled:
+  body: "[user:display-name],\r\n\r\n[site:name] webhelyen a hozzáférés törölve lett.\r\n\r\n--  [site:name] team"
+  subject: '[user:display-name] fiókadatai [site:name] webhelyen (törölve)'

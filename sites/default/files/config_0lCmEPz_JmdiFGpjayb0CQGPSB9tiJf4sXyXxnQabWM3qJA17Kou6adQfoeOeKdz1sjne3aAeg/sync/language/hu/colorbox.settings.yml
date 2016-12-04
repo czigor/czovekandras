@@ -1,0 +1,7 @@
+custom:
+  text_current: '{current} / {total}'
+  text_previous: '« Előző'
+  text_next: 'Következő »'
+  text_close: Bezár
+  initialwidth: '300'
+  initialheight: '250'

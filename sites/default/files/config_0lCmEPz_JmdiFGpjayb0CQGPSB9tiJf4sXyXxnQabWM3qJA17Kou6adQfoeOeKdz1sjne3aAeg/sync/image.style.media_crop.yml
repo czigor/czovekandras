@@ -1,0 +1,32 @@
+uuid: e9331900-40ff-4d07-99e6-82d0ca3e4081
+langcode: en
+status: true
+dependencies:
+  module:
+    - crop
+    - image_effects
+_core:
+  default_config_hash: UPdGXjjn2b8cCoa_RhpJ8X_8wyxmQtL9IspWTiP6PVM
+name: media_crop
+label: 'Media Crop'
+effects:
+  39bd5538-f2bc-48a4-b6f2-90ba2175b1eb:
+    uuid: 39bd5538-f2bc-48a4-b6f2-90ba2175b1eb
+    id: crop_crop
+    weight: -9
+    data:
+      crop_type: media_crop
+  f9848929-da00-4edd-b87e-18c0c434af38:
+    uuid: f9848929-da00-4edd-b87e-18c0c434af38
+    id: image_effects_auto_orient
+    weight: -10
+    data:
+      scan_exif: true
+  5b29f8d6-cd7a-451e-9112-54b895d17635:
+    uuid: 5b29f8d6-cd7a-451e-9112-54b895d17635
+    id: image_scale
+    weight: -8
+    data:
+      width: 300
+      height: null
+      upscale: false

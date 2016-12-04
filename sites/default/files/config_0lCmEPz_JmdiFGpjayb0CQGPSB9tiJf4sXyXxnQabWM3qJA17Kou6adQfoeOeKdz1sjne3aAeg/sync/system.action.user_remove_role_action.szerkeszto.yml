@@ -1,0 +1,14 @@
+uuid: 20491d85-8ff7-4020-bc06-6a6e861fb13b
+langcode: hu
+status: true
+dependencies:
+  config:
+    - user.role.szerkeszto
+  module:
+    - user
+id: user_remove_role_action.szerkeszto
+label: 'Remove the szerkesztő role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: szerkeszto

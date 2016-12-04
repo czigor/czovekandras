@@ -1,0 +1,6 @@
+uuid: fb7415d1-e667-4a97-9700-e1344fff9853
+langcode: en
+status: true
+dependencies: {  }
+id: gallery
+label: Gallery

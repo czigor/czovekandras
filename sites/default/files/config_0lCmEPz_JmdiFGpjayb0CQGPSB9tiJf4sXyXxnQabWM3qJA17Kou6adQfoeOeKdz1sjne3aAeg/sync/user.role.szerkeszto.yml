@@ -1,0 +1,22 @@
+uuid: a5c0f978-e10e-410d-bb36-54f77b558202
+langcode: hu
+status: true
+dependencies: {  }
+id: szerkeszto
+label: szerkesztő
+weight: 3
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'administer nodes'
+  - 'create article content'
+  - 'delete own article content'
+  - 'edit own article content'
+  - 'view article revisions'
+  - 'access toolbar'
+  - 'create content translations'
+  - 'delete content translations'
+  - 'update content translations'
+  - 'translate article node'
+  - 'access files overview'
+  - 'administer comments'

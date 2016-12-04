@@ -1,0 +1,19 @@
+uuid: 3d097e0d-8552-4601-b44a-ce00b92a2311
+langcode: en
+status: true
+dependencies:
+  module:
+    - crop
+    - media_entity_video
+third_party_settings:
+  crop:
+    image_field: field_image
+id: local_video
+label: 'Local video'
+description: ''
+type: video
+queue_thumbnail_downloads: false
+new_revision: false
+type_configuration:
+  source_field: field_local_video
+field_map: {  }

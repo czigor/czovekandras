@@ -1,0 +1,23 @@
+uuid: fc43b35d-509c-49ee-8b5a-70b6e3a9d600
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_entity
+_core:
+  default_config_hash: 0-i_APypv4bX0oYFfS_A5b2aVXkvag5LiFaFITrLwio
+id: media.field_tweet_author
+field_name: field_tweet_author
+entity_type: media
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

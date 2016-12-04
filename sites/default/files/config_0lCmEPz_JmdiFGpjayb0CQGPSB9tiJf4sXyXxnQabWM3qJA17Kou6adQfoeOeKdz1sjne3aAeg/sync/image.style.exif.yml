@@ -1,0 +1,15 @@
+uuid: 37c5e451-9d2f-459f-93ac-24b812c2e10b
+langcode: en
+status: true
+dependencies:
+  module:
+    - image_effects
+name: exif
+label: 'EXIF rotate'
+effects:
+  d483fc6d-4f03-47d9-b35f-379a7f7a4bec:
+    uuid: d483fc6d-4f03-47d9-b35f-379a7f7a4bec
+    id: image_effects_auto_orient
+    weight: 1
+    data:
+      scan_exif: true

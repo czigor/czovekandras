@@ -1,0 +1,64 @@
+uuid: 277f4109-4906-43a8-b845-617582cb8ab7
+langcode: en
+status: true
+dependencies: {  }
+id: gallery_slick
+name: gallery_slick
+label: 'Gallery slick'
+weight: 0
+group: ''
+skin: ''
+breakpoints: 0
+options:
+  options__active_tab: edit-options-settings
+  settings:
+    mobileFirst: true
+    asNavFor: ''
+    accessibility: true
+    adaptiveHeight: true
+    autoplay: false
+    autoplaySpeed: 3000
+    pauseOnHover: true
+    pauseOnDotsHover: false
+    arrows: true
+    prevArrow: '<button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0" role="button">Previous</button>'
+    nextArrow: '<button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0" role="button">Next</button>'
+    downArrow: false
+    downArrowTarget: ''
+    downArrowOffset: 0
+    centerMode: true
+    centerPadding: 50px
+    dots: false
+    dotsClass: slick-dots
+    appendDots: $(element)
+    draggable: true
+    fade: false
+    focusOnSelect: true
+    infinite: false
+    initialSlide: 0
+    lazyLoad: ''
+    mouseWheel: false
+    randomize: false
+    respondTo: window
+    rtl: false
+    rows: 1
+    slidesPerRow: 1
+    slide: ''
+    slidesToShow: 5
+    slidesToScroll: 3
+    speed: 500
+    swipe: true
+    swipeToSlide: true
+    edgeFriction: 0.35
+    touchMove: true
+    touchThreshold: 5
+    useCSS: true
+    cssEase: ease
+    cssEaseBezier: ''
+    cssEaseOverride: ''
+    useTransform: false
+    easing: ''
+    variableWidth: false
+    vertical: false
+    verticalSwiping: false
+    waitForAnimate: false

@@ -33,8 +33,6 @@ use Symfony\Component\Validator\Util\PropertyPath;
 /**
  * Recursive implementation of {@link ContextualValidatorInterface}.
  *
- * @since  2.5
- *
  * @author Bernhard Schussek <bschussek@gmail.com>
  */
 class RecursiveContextualValidator implements ContextualValidatorInterface
@@ -792,7 +790,7 @@ class RecursiveContextualValidator implements ContextualValidatorInterface
      * @param int                       $traversalStrategy The strategy used for
      *                                                     traversing the value
      * @param GroupSequence             $groupSequence     The group sequence
-     * @param string[]|null             $cascadedGroup     The group that should
+     * @param string|null               $cascadedGroup     The group that should
      *                                                     be passed to cascaded
      *                                                     objects instead of
      *                                                     the group sequence

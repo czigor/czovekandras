@@ -1,0 +1,25 @@
+uuid: 31efad3e-20a7-464a-a9f0-b4e1c58a8195
+langcode: en
+status: true
+dependencies:
+  module:
+    - image_effects
+_core:
+  default_config_hash: rAkKEL1yw7HR5CaKyRy_NigxVsxr7M13yfnhwdeGBZ4
+name: gallery_item
+label: 'Gallery item'
+effects:
+  ea7ab074-ee6d-4ee3-b660-95ba8bc6740c:
+    uuid: ea7ab074-ee6d-4ee3-b660-95ba8bc6740c
+    id: image_effects_auto_orient
+    weight: 1
+    data:
+      scan_exif: true
+  818267c3-af8e-4ade-98f9-3e401d61b329:
+    uuid: 818267c3-af8e-4ade-98f9-3e401d61b329
+    id: image_scale
+    weight: 2
+    data:
+      width: 1000
+      height: null
+      upscale: false

@@ -1,0 +1,2 @@
+label: 'Alapértelmezett rövid dátum'
+pattern: 'Y. m. d. - H:i'

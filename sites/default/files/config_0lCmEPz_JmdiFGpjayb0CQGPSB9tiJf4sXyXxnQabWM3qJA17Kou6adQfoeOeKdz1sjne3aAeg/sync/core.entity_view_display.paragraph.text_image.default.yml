@@ -1,0 +1,72 @@
+uuid: 0c1bfc8f-d236-476b-b900-fb131c3a37d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_image.field_image
+    - field.field.paragraph.text_image.field_text
+    - image.style.medium
+    - paragraphs.paragraphs_type.text_image
+  module:
+    - ds
+    - image
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col
+      path: modules/ds
+      library: layout_plugin/ds_2col
+      disable_css: false
+      settings:
+        wrappers:
+          left: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+      entity_classes: old_view_mode
+    regions:
+      left:
+        - field_text
+      right:
+        - field_image
+id: paragraph.text_image.default
+targetEntityType: paragraph
+bundle: text_image
+mode: default
+content:
+  created:
+    type: timestamp
+    weight: 2
+    label: above
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  field_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_text:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  uid:
+    type: entity_reference_label
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+hidden: {  }
